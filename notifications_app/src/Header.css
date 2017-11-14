@@ -1,8 +1,12 @@
 .header {
   color: red;
+  background-color: #D3E9FF;
 }
 
+.title {
+  color: purple;
+}
 .searchIcon {
   width: 50px;
-  
+
 }

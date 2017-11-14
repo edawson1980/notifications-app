@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <div className="NotificationsFrame">
         <div className="panel">
-          <Header />
-          <Content />
+          <Header title="Marsupial Sightings"/>
+          <Content activities= {activities}/>
         </div>
 
       </div>

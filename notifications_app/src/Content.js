@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
+import ActivityItem from './ActivityItem.js';
 import './Content.css';
 
 
 class Content extends Component {
   render() {
+    const {activities} = this.props;
+
     return(
       <div className="content">
         <div className="line"></div>
 
-        <div className="item">
-          <div className="avatar">
-            <img src="https://pbs.twimg.com/media/B7MBEEiIYAQtgdT.jpg" alt="screaming possum"/>
-          </div>
-
-          <p>test test</p>
-        </div>
+        {/*Timeline Item*/}
+        {activities.map((activity) => (
+          <ActivityItem
+            activity = {activity}/>
+        ))}
       </div>
     )
   }
